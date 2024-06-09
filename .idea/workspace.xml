@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e867504-4caa-44b3-8e62-54891a5ca485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/sort/bubble.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/bubble_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/merge.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/merge_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/quick.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sort/quick_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decimal/minus.go" beforeDir="false" afterPath="$PROJECT_DIR$/decimal/minus.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/decimal/minus_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/decimal/minus_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +41,14 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/tan/workspace/data-structure-algorithms/sort",
+    "last_opened_file_path": "/Users/tan/workspace/data-structure-algorithms/decimal",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/decimal" />
       <recent name="$PROJECT_DIR$/sort" />
     </key>
   </component>
