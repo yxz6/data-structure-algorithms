@@ -1,43 +1,23 @@
 package string
 
-import "fmt"
-
 // KMP time complexity O(n+m), space complexity O(m)
 func KMP(s, pattern string) int {
 	lps := createLongestPrefixTable(pattern)
-	fmt.Println(lps)
-	//// next[0] = 0
-	//// [0, next[i]-1] = [i-next[i], i-1]
-	//next := make([]int, len(pattern))
-	//for i := 1; i < len(next); i++ {
-	//	j := i - 1
-	//	for next[j] >= 0 {
-	//		if pattern[i-1] == pattern[next[j]] {
-	//			next[i] = next[j] + 1
-	//			break
-	//		} else {
-	//			j = next[j]
-	//		}
-	//	}
-	//}
-	//
-	//i := 0
-	//j := 0
-	//for j < len(s) {
-	//	if s[j] == pattern[i] {
-	//		i++
-	//		j++
-	//		if i == len(pattern) {
-	//			return j - len(pattern) + 1
-	//		}
-	//	} else {
-	//		i = next[i]
-	//		if i == -1 {
-	//			i = 0
-	//			j++
-	//		}
-	//	}
-	//}
+	i, j := 0, 0
+	for i < len(s) && j < len(pattern) {
+		if pattern[j] == s[i] {
+			i++
+			j++
+		} else if j > 0 {
+			//previous string's longest prefix, and go to the next char
+			j = lps[j-1]
+		} else {
+			i++
+		}
+	}
+	if j == len(pattern) {
+		return i - j
+	}
 	return -1
 }
 
