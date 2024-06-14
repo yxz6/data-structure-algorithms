@@ -7,7 +7,6 @@
     <list default="true" id="9e867504-4caa-44b3-8e62-54891a5ca485" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/string/kmp.go" beforeDir="false" afterPath="$PROJECT_DIR$/string/kmp.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string/kmp_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/string/kmp_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

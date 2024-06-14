@@ -47,7 +47,7 @@ func createLongestPrefixTable(pattern string) []int {
 				if prevPrefixLen == 0 {
 					break LOOP
 				}
-				// try to find longest prefix in sub string
+				// try to find the longest prefix in sub string
 				prevPrefixLen = lps[prevPrefixLen-1]
 			}
 		}
