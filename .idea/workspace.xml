@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e867504-4caa-44b3-8e62-54891a5ca485" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/graph/disjoint_set.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leetcode/q128.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/disjoint_set.go" beforeDir="false" afterPath="$PROJECT_DIR$/graph/disjoint_set.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

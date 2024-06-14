@@ -1,6 +1,35 @@
-package graph
+package leetcode
 
-// DisjointSet a disjoint-set data structure, also called a union–find data structure or merge–find set
+//https://leetcode.com/problems/longest-consecutive-sequence/description/
+
+// nums allow duplicate numbers
+
+func longestConsecutive(nums []int) int {
+	ds := NewDisjointSet(len(nums))
+	numToIndex := make(map[int]int, len(nums))
+	for i, num := range nums {
+		numToIndex[num] = i
+	}
+
+	for num, i := range numToIndex {
+		if left, ok := numToIndex[num-1]; ok {
+			ds.Union(i, left)
+		}
+
+		if right, ok := numToIndex[num+1]; ok {
+			ds.Union(i, right)
+		}
+	}
+
+	res := 0
+	for _, v := range ds.sizes {
+		if v > res {
+			res = v
+		}
+	}
+	return res
+}
+
 type DisjointSet struct {
 	parents []int // given node x, parents[x] is the parent node
 	sizes   []int // used for union merge
